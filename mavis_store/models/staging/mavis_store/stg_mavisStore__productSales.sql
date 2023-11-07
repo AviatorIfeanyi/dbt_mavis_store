@@ -9,5 +9,5 @@ SELECT ROW_NUMBER() OVER() AS id, Date as date, Customer_ID as customer_id,
   Country as country, State as state, Product_Category as product_category,
   Sub_Category as sub_category, Product as product, 
   Order_Quantity as order_quantity, Unit_Cost as unit_cost, 
-  Unit_Price as unit_price, Cost as cost
+  Unit_Price as unit_price
 FROM {{ source('mavis_store_sales', 'product_sales') }}
