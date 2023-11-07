@@ -1,0 +1,74 @@
+version: 2
+
+models:
+  - name: stg_mavisStore__productSales
+    description: "Mavis Store Product sales Data"
+    
+    columns:
+      - name: id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+
+      - name: date
+        description: The date of business transaction
+        tests:
+          - not_null
+      
+      - name: customer_id
+        description: Customer Unique Identifier
+        tests:
+          - not_null
+
+      - name: customer_age
+        description: Customers' Age
+        tests:
+          - not_null
+     
+      - name: customer_gender
+        description: Customers Gender
+        tests:
+          - not_null
+          - accepted_values : 
+              values: ['M', 'F']
+
+      - name: country
+        description: Customer Country of Identity
+        tests:
+          - not_null
+
+      - name: state
+        description: State of Residence
+        tests:
+          - not_null
+
+      - name: product_category
+        description: Category product belongs to
+        tests:
+          - not_null
+
+      - name: sub_category
+        description: Sub Category of Product
+        tests:
+          - not_null
+
+      - name: product
+        description: Product Sold in Store
+        tests:
+          - not_null
+
+      - name: order_quantity
+        description: Total quantity ordered by customer
+        tests:
+          - not_null
+
+      - name: unit_cost
+        description: Cost per product sold
+        tests:
+          - not_null
+
+      - name: unit_price
+        description: Price per product
+        tests:
+          - not_null
