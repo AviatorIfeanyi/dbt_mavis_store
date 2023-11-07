@@ -29,5 +29,8 @@ models:
     staging:
       +materialized: view
     intermediate:
-      +materialized: table
+      customer:
+        +materialized: table
+      transaction:
+        +materialized: table
 
