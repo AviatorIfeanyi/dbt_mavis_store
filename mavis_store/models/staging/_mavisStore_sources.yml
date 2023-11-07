@@ -1,53 +1,53 @@
 version: 2
 
 sources:
-  name: mavis_store
-  database: data-engr-project
-  schema: mavisStore
-  description:
+  - name: mavis_store_product_sales
+    database: data-engr-project
+    schema: MavisStore
+    description: ""
 
-  table:
-    name: mavis_store
-    description:
-    columns:
-      name: Date
-      description:
-    columns:
-      name: Year
-      description:
-    columns:
-      name: Customer_ID
-      description:
-    columns:
-      name: Customer_Age
-      description:
-    columns:
-      name: Customer_Gender
-      description:
-    columns:
-      name: Country
-      description:
-    columns:
-      name: State
-      description:
-    columns:
-      name: Product_Category
-      description:
-    columns:
-      name: Sub_Category
-      description:
-    columns:
-      name: Product
-      description:
-    columns:
-      name: Orer_Quantity
-      description:
-    columns:
-      name: Unit_Cost
-      description:
-    columns:
-      name: Unit_Price
-      description:
-    columns:
-      name: Cost
-      description:
+    tables:
+      - name: mavis_store
+        description: ""
+        columns:
+          - name: Date
+            description: ""
+        columns:
+          - name: Year
+            description: ""
+        columns:
+          - name: Customer_ID
+            description: ""
+        columns:
+          - name: Customer_Age
+            description: ""
+        columns:
+          - name: Customer_Gender
+            description: ""
+        columns:
+          - name: Country
+            description: ""
+        columns:
+          - name: State
+            description: ""
+        columns:
+          - name: Product_Category
+            description: ""
+        columns:
+          - name: Sub_Category
+            description: ""
+        columns:
+          - name: Product
+            description: ""
+        columns:
+          - name: Order_Quantity
+            description: ""
+        columns:
+          - name: Unit_Cost
+            description: ""
+        columns:
+          - name: Unit_Price
+            description: ""
+        columns:
+          - name: Cost
+            description: ""
