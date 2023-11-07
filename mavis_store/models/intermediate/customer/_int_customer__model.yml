@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: int_customer
+    description: "Mavis Store Customers"
+    
+    columns:
+      - name: id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+
+    - name: age
+      description: Customers' Age
+      tests:
+        - not_null
+
+    - name: gender
+      description: Customers' Gender
+      tests:
+        - not_null
