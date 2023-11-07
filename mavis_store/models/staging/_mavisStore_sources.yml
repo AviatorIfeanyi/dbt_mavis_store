@@ -1,13 +1,13 @@
 version: 2
 
 sources:
-  - name: mavis_store_product_sales
+  - name: mavis_store_sales
     database: data-engr-project
     schema: MavisStore
     description: ""
 
     tables:
-      - name: mavis_store
+      - name: product_sales
         description: ""
         columns:
           - name: Date
