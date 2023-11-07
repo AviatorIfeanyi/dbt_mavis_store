@@ -4,7 +4,7 @@ WITH data_source AS(
 )
 
 
-SELECT Date as date, Customer_ID as customer_id, 
+SELECT ROW_NUMBER() OVER() AS id, Date as date, Customer_ID as customer_id, 
   Customer_Age as customer_age, Customer_Gender as customer_gender,
   Country as country, State as state, Product_Category as product_category,
   Sub_Category as sub_category, Product as product, 
