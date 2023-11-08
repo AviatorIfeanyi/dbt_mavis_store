@@ -10,13 +10,16 @@ models:
         tests:
           - unique
           - not_null
+          - relationships:
+              to: ref("int_transaction")
+              field: customer_id
 
-    - name: age
-      description: Customers' Age
-      tests:
-        - not_null
+      - name: age
+        description: Customers' Age
+        tests:
+          - not_null
 
-    - name: gender
-      description: Customers' Gender
-      tests:
-        - not_null
+      - name: gender
+        description: Customers' Gender
+        tests:
+          - not_null
