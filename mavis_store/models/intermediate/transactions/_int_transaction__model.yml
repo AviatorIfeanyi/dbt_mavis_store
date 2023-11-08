@@ -1,0 +1,43 @@
+version: 2
+
+models:
+  - name: int_transaction
+    description: Mavis Store Customer Records
+    columns:
+      - name: tnx_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+      
+      - name: customer_id
+        description: Foreign key to connect to customer model 
+        tests:
+          - not_null
+          - relationships:
+              to: ref("int_customer")
+              field: id
+
+      - name: state
+        description: Customer State of residence 
+      
+      - name: product
+        description: Product bought by customer
+
+      - name: order_quantity
+        description: Quantity demanded from the product bought by the customer 
+
+      - name: unit_price
+        description: Price per product
+      
+      - name: unit_cost
+        description: Cost per product
+
+      - name: total_cost
+        description: ""
+
+      - name: revenue
+        description: ""
+
+      - name: profit
+        description: ""
