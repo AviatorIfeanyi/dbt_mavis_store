@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: int_location
+    description: "Mavis Store Customers' Location"
+    
+    columns:
+      - name: state
+        description: Primary key and Customer state of residence
+        tests:
+          - not_null
+          - relationships:
+              to: ref("int_transaction")
+              field: state
+
+      - name: country
+        description: Customers' Country
+        tests:
+          - not_null
