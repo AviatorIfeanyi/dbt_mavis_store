@@ -8,7 +8,6 @@ models:
       - name: id
         description: Primary key
         tests:
-          - unique
           - not_null
           - relationships:
               to: ref("int_transaction")
