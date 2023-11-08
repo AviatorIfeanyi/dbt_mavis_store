@@ -23,14 +23,11 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
 
-
 models:
   mavis_store:
     staging:
       +materialized: view
     intermediate:
       customer:
-        +materialized: table
-      transaction:
         +materialized: table
 
