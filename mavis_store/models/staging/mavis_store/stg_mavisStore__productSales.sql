@@ -6,8 +6,8 @@ WITH data_source AS(
 
 SELECT ROW_NUMBER() OVER() AS id, Date as date, Customer_ID as customer_id, 
   Customer_Age as customer_age, Customer_Gender as customer_gender,
-  Country as country, State as state, Product_Category as product_category,
-  Sub_Category as sub_category, Product as product, 
+  Country as country, State as state, Product as product, 
+  Product_Category as product_category, Sub_Category as sub_category,  
   Order_Quantity as order_quantity, Unit_Cost as unit_cost, 
   Unit_Price as unit_price, 
   (order_quantity * unit_cost) as total_cost,
