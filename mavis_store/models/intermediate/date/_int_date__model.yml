@@ -1,19 +1,29 @@
 version: 2
 
 models:
-  - name: int_location
-    description: "Mavis Store Customers' Location"
+  - name: int_date
+    description: "Full date when order was made at the store"
     
     columns:
-      - name: state
-        description: Primary key and Customer state of residence
+      - name: date
+        description: Primary key and full date when order was made
         tests:
           - not_null
           - relationships:
               to: ref("int_transaction")
-              field: state
+              field: date
 
-      - name: country
-        description: Customers' Country
+      - name: year
+        description: Year when order was made
+        tests:
+          - not_null
+      
+      - name: month
+        description: Month Number when Order was made
+        tests:
+          - not_null
+      
+      - name: month_name
+        description: Month Name when order was made
         tests:
           - not_null
