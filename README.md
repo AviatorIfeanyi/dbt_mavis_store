@@ -3,7 +3,7 @@
 
 <br >
 
-This project details how data transformation can be done using dbt: a modern data tool for data transformation. The dataset consists of sales record for a ficticious store called **Mavin Store**. 
+This project details how data transformation can be done using dbt: a tool for data transformation. The dataset consists of sales record for a ficticious store called **Mavin Store**. 
 
 As part of the data transformation process, dimensional data models was created
 
